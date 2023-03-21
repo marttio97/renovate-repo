@@ -5,7 +5,7 @@ module.exports = {
   onboarding: true,
   platform: 'github',
   includeForks: true,
-  dryRun: 'full',
+  dryRun: null,
   repositories: [
     'marttio97/pizzaStore',
   ],
