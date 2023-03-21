@@ -12,7 +12,7 @@ module.exports = {
   onboardingCommitMessage: "onboarding config",
   onboardingPrTitle: "ONBOARDING",
   onboardingConfig: {
-    "$schema": "https://docs.renovatebot.com/renovate-shcema.json",
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends" : [
       "config:base"
       ]
