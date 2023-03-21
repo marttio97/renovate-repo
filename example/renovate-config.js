@@ -1,7 +1,7 @@
 module.exports = {
   branchPrefix: 'test-renovate/',
-  username: 'renovate-release',
-  gitAuthor: 'Renovate Bot <bot@renovateapp.com>',
+  username: 'marttio97',
+  gitAuthor: 'Martin <martioto@gmail.com>',
   onboarding: true,
   platform: 'github',
   includeForks: true,
@@ -14,22 +14,8 @@ module.exports = {
   onboardingConfig: {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends" : [
-      "config:base"
+      "config:base",
+      "helpers:pinGitHubActionDigests"
       ]
   },
-  packageRules: [
-    {
-      description: 'lockFileMaintenance',
-      matchUpdateTypes: [
-        'pin',
-        'digest',
-        'patch',
-        'minor',
-        'major',
-        'lockFileMaintenance',
-      ],
-      dependencyDashboardApproval: false,
-      stabilityDays: 0,
-    },
-  ],
 };
